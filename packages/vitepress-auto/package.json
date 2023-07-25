@@ -1,0 +1,41 @@
+{
+  "name": "vitepress-auto",
+  "version": "1.0.0",
+  "description": "Automatically generate sidebar",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "keywords": [
+    "vitepress",
+    "auto",
+    "sidebar",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Richard-Zhang1019/vitepress-auto"
+  },
+  "author": "Richard-Zhang1019",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "fast-glob": "^3.3.1",
+    "lodash-es": "^4.17.21",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  }
+}
