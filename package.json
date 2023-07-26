@@ -1,6 +1,9 @@
 {
   "description": "Automatically generate sidebar",
   "license": "ISC",
+  "scripts": {
+    "dev": "cd ./packages/vitepress-auto && pnpm run dev"
+  },
   "devDependencies": {
     "@types/node": "^20.4.4",
     "tsup": "^7.1.0",

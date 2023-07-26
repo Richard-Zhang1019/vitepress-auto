@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 import { vitepressAuto } from 'vitepress-auto'
 
-console.log(vitepressAuto())
+console.log(vitepressAuto(['blogs', 'interview']))
 
 export default defineConfig({
   title: 'Docs',
@@ -95,28 +95,8 @@ export default defineConfig({
         text: '博客',
         link: '/blogs/index',
         activeMatch: '/blogs'
-      },
-      {
-        text: '笔记',
-        link: '/notes/index',
-        activeMatch: '/notes'
-      },
-      {
-        text: 'Private',
-        link: '/private/index',
-        activeMatch: '/interview'
-      },
-      {
-        text: 'English',
-        link: '/english/index',
-        activeMatch: '/english'
-      },
-      {
-        text: 'Demo',
-        link: '/demo/index',
-        activeMatch: '/demo'
       }
     ],
-    // sidebar: vitepressAuto()
+    sidebar: vitepressAuto(['blogs', 'interview'])
   }
 })
