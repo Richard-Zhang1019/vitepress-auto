@@ -4,8 +4,9 @@ import fg from 'fast-glob'
  * vitepress-auto
  * @description 自动化生成vitepress的sidebar目录
  * @param path 传入想要自动生成sidebar目录名
+ * @param isExcludeIndex 是否生成sidebar目录时排除index.md文件
  */
-function vitepressAuto(path: string[]) {
+function vitepressAuto(path: string[], isExcludeIndex = true) {
   const result = {}
   path.forEach(item => {
     result[`/${item}`] = [{ items: getSidebar(item) }]

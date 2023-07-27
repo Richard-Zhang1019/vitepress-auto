@@ -2,10 +2,13 @@
   "description": "Automatically generate sidebar",
   "license": "ISC",
   "scripts": {
-    "dev": "cd ./packages/vitepress-auto && pnpm run dev"
+    "dev": "cd ./packages/vitepress-auto && pnpm run dev",
+    "build": "cd ./packages/vitepress-auto && pnpm run build",
+    "release": "bumpp package.json packages/**/package.json"
   },
   "devDependencies": {
     "@types/node": "^20.4.4",
+    "bumpp": "^9.1.1",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }
