@@ -1,6 +1,6 @@
 import fg from 'fast-glob'
 
-type FileNameFormatType = 'default' | 'number-name' | 'name' | 'capitalize'
+type FileNameFormatType = 'default' | 'number-name' | 'name'
 
 /**
  * vitepress-auto

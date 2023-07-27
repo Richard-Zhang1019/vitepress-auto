@@ -29,6 +29,9 @@
     "type": "git",
     "url": "https://github.com/Richard-Zhang1019/vitepress-auto"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Richard-Zhang1019",
   "license": "ISC",
   "devDependencies": {
