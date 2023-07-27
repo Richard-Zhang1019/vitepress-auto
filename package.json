@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Automatically generate sidebar",
   "license": "ISC",
   "packageManager": "pnpm@7.5.2",
