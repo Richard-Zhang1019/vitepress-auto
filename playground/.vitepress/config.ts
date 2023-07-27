@@ -2,8 +2,6 @@ import { defineConfig } from 'vitepress'
 
 import { vitepressAuto } from 'vitepress-auto'
 
-console.log(vitepressAuto(['blogs', 'interview']))
-
 export default defineConfig({
   title: 'Docs',
 
@@ -97,6 +95,6 @@ export default defineConfig({
         activeMatch: '/blogs'
       }
     ],
-    sidebar: vitepressAuto(['blogs', 'interview'])
+    sidebar: vitepressAuto(['blogs', 'interview'], true)
   }
 })
