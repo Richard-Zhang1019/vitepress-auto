@@ -1,6 +1,7 @@
 {
   "description": "Automatically generate sidebar",
   "license": "ISC",
+  "packageManager": "pnpm@7.5.2",
   "scripts": {
     "dev": "cd ./packages/vitepress-auto && pnpm run dev",
     "build": "cd ./packages/vitepress-auto && pnpm run build",
