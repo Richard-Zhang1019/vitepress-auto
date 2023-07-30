@@ -15,7 +15,7 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "vitepress-auto": ["./packages/index.ts"]
+      "vitepress-auto": ["packages/vitepress-auto/index.ts"]
     }
   },
   "exclude": [

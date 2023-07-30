@@ -95,6 +95,6 @@ export default defineConfig({
         activeMatch: '/blogs'
       }
     ],
-    sidebar: vitepressAuto(['blogs', 'interview'], true)
+    sidebar: vitepressAuto(['blogs'], true)
   }
 })
