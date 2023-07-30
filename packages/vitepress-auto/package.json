@@ -1,6 +1,6 @@
 {
   "name": "vitepress-auto",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Automatically generate sidebar",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
