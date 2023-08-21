@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 import { vitepressAuto } from 'vitepress-auto'
+console.log('vvv', vitepressAuto(['blogs'], true))
 
 export default defineConfig({
   title: 'Docs',
@@ -95,6 +96,12 @@ export default defineConfig({
         activeMatch: '/blogs'
       }
     ],
-    sidebar: vitepressAuto(['blogs'], true)
+    sidebar: {
+      '/blogs': [{
+        text: '博客',
+        collapsed: false,
+        items: vitepressAuto('blogs', true)
+      }]
+    }
   }
 })

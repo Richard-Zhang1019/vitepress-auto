@@ -2,24 +2,18 @@ import fg from 'fast-glob'
 import fs from 'node:fs'
 import readline from 'node:readline'
 
-type FileNameFormatType = 'default' | 'number-name' | 'name'
-
 /**
  * vitepress-auto
  * @description 自动化生成vitepress的sidebar目录
- * @param {Array} path 传入想要自动生成sidebar目录名
+ * @param {String} path 传入想要自动生成sidebar目录名
  * @param {Boolean} isExcludeIndex 是否生成sidebar目录时排除index.md文件
- * @param {String} fileNameFormat 文件名格式
  * @returns 返回sidebar目录
  */
-function vitepressAuto(
-  path: string[],
-  isExcludeIndex = true,
-  fileNameFormat: FileNameFormatType = 'default'
-) {
-  const result = {}
-  path.forEach(async item => {
-    result[`/${item}`] = [{ items: await getSidebar(item, isExcludeIndex) }]
+function vitepressAuto(path: string, isExcludeIndex = true) {
+  const arr = [path]
+  const result: { text: string | undefined; link: string }[] = []
+  arr.forEach(async item => {
+    result.push(...(await getSidebar(item, isExcludeIndex)))
   })
   return result
 }
